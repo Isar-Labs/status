@@ -1,36 +1,49 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: isar-labs # Your GitHub organization or username, where this repository lives
+repo: status # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Suite
+    url: https://suite.isar-labs.com
+    maxResponseTime: 8000
+  - name: Construction Documentation
+    url: https://construction-documentation.isar-labs.com
+    maxResponseTime: 8000
+  - name: Document Workflow
+    url: https://document-workflow.isar-labs.com
+    maxResponseTime: 8000
+  - name: Vercel (third party)
+    url: https://www.vercel-status.com/api/v2/summary.json
+    __dangerous__body_down_if_text_missing: '"indicator":"none"'
+    __dangerous__body_degraded: '"indicator":"minor"'
+    maxResponseTime: 8000
+  - name: Trigger.dev (third party)
+    url: https://status.trigger.dev
+    __dangerous__body_down_if_text_missing: "All services are online"
+    maxResponseTime: 15000
+  - name: Neon (third party)
+    url: https://neonstatus.com/aws-us-east-n-virginia
+    __dangerous__body_down_if_text_missing: "We're fully operational"
+    __dangerous__body_degraded_if_text_missing: "operational"
+    maxResponseTime: 15000
+
+assignees: # Users to assign downtime issues (optional)
+  - alexanderhodes
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
+  cname: status.isar-labs.com
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: Status
+  introTitle: "Das ist die Status-Seite von **Isar Labs**, die auf **Upptime** basiert."
+  introMessage: Hier findest du den aktuellen Status unserer Dienste. Wir arbeiten kontinuierlich daran, eine hohe Verfügbarkeit und Zuverlässigkeit zu gewährleisten.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+#    - title: GitHub
+#      href: https://github.com/$OWNER/$REPO
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
