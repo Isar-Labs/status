@@ -11,17 +11,20 @@ sites:
   - name: Document Workflow
     url: https://document-workflow.isar-labs.com
     maxResponseTime: 8000
-  - name: Vercel (third party)
+  - name: Vercel CDN & Serverless (third party)
     url: https://www.vercel-status.com/api/v2/summary.json
     __dangerous__body_down_if_text_missing: '"indicator":"none"'
     __dangerous__body_degraded: '"indicator":"minor"'
-    maxResponseTime: 8000
+    __dangerous__body_down: '"status":"major_outage"'
+    __dangerous__body_down_if_text_missing_2: '"name":"Serverless Functions","status":"operational"'
+    __dangerous__body_down_if_text_missing_3: '"name":"Edge Network","status":"operational"'
+    maxResponseTime: 10000
   - name: Trigger.dev (third party)
     url: https://status.trigger.dev
     __dangerous__body_down_if_text_missing: "All services are online"
     maxResponseTime: 15000
-  - name: Neon (third party)
-    url: https://neonstatus.com/aws-us-east-n-virginia
+  - name: Neon Database (third party)
+    url: https://neonstatus.com/aws-europe-frankfurt
     __dangerous__body_down: "major outage"
     __dangerous__body_degraded: "degraded performance"
     expectedStatusCodes:
