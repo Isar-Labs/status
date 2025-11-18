@@ -22,9 +22,9 @@
     "url": "https://construction-documentation.isar-labs.com",
     "icon": "https://icons.duckduckgo.com/ip3/construction-documentation.isar-labs.com.ico",
     "slug": "construction-documentation",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -33,16 +33,18 @@
     "timeWeek": 1196,
     "timeMonth": 1196,
     "timeYear": 1196,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2025-11-18": 0
+    }
   },
   {
     "name": "Document Workflow",
     "url": "https://document-workflow.isar-labs.com",
     "icon": "https://icons.duckduckgo.com/ip3/document-workflow.isar-labs.com.ico",
     "slug": "document-workflow",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -51,7 +53,9 @@
     "timeWeek": 1138,
     "timeMonth": 1138,
     "timeYear": 1138,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2025-11-18": 0
+    }
   },
   {
     "name": "Vercel CDN & Serverless (third party)",
@@ -59,11 +63,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.vercel-status.com.ico",
     "slug": "vercel-cdn-and-serverless-third-party",
     "status": "up",
-    "uptime": "88.55%",
+    "uptime": "89.77%",
     "uptimeDay": "87.62%",
-    "uptimeWeek": "88.55%",
-    "uptimeMonth": "88.55%",
-    "uptimeYear": "88.55%",
+    "uptimeWeek": "89.77%",
+    "uptimeMonth": "89.77%",
+    "uptimeYear": "89.77%",
     "time": 2323,
     "timeDay": 333,
     "timeWeek": 2323,
@@ -79,11 +83,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/status.trigger.dev.ico",
     "slug": "trigger-dev-third-party",
     "status": "up",
-    "uptime": "90.42%",
+    "uptime": "90.96%",
     "uptimeDay": "100.00%",
-    "uptimeWeek": "90.42%",
-    "uptimeMonth": "90.42%",
-    "uptimeYear": "90.42%",
+    "uptimeWeek": "90.96%",
+    "uptimeMonth": "90.96%",
+    "uptimeYear": "90.96%",
     "time": 1138,
     "timeDay": 1208,
     "timeWeek": 1138,
@@ -98,7 +102,7 @@
     "url": "https://neonstatus.com/aws-europe-frankfurt",
     "icon": "https://icons.duckduckgo.com/ip3/neonstatus.com.ico",
     "slug": "neon-database-third-party",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -109,6 +113,8 @@
     "timeWeek": 654,
     "timeMonth": 654,
     "timeYear": 654,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2025-11-18": 0
+    }
   }
 ]
