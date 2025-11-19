@@ -3,7 +3,7 @@ const format = new Intl.NumberFormat("de-DE");
 function formatText(element) {
   const text = element.textContent;
 
-  if (text.includes("ms")) {
+  if (text.includes("ms") || !text.includes(".")) {
     const responseTime = text.replace("ms", "").trim();
 
     const time = parseInt(responseTime, 10);
