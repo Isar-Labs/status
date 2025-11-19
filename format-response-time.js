@@ -1,4 +1,4 @@
-function formatResponseTime() {
+window.onload = function () {
   const elements = document.getElementsByClassName("data");
   const format = new Intl.NumberFormat("de-DE");
 
@@ -15,6 +15,4 @@ function formatResponseTime() {
       }
     }
   }
-}
-
-formatResponseTime();
+};
