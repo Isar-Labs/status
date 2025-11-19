@@ -58,7 +58,7 @@ status-website:
       href: https://isar-labs.com
     - title: Suite
       href: https://suite.isar-labs.com
-  js: "function formatNumbers() { const format = new Intl.NumberFormat('de-DE'); const selectors = ['.data', 'td', 'th', 'span', '.response-time', '[class*=\"time\"]', '[class*=\"response\"]']; selectors.forEach(selector => { const elements = document.querySelectorAll(selector); elements.forEach(element => { const text = element.textContent || element.innerText; if (text && text.includes('ms') && /\\d+\\s*ms/.test(text)) { const match = text.match(/(\\d+)\\s*ms/); if (match) { const number = parseInt(match[1]); if (!isNaN(number)) { const formatted = format.format(number); element.textContent = text.replace(match[0], formatted + ' ms'); element.innerText = text.replace(match[0], formatted + ' ms'); } } } }); }); } window.addEventListener('load', formatNumbers); setTimeout(formatNumbers, 1000); setTimeout(formatNumbers, 3000);"
+  js: "function formatNumbers() { const format = new Intl.NumberFormat('de-DE'); const selectors = ['.data', 'td', 'dd', 'th', 'span', '.response-time', '[class*=\"time\"]', '[class*=\"response\"]']; selectors.forEach(selector => { const elements = document.querySelectorAll(selector); elements.forEach(element => { const text = element.textContent || element.innerText; if (text && text.includes('ms')) { const match = text.match(/([0-9]+)\\s*ms/); if (match) { const number = parseInt(match[1], 10); if (!isNaN(number) && number > 0) { const formatted = format.format(number); const newText = text.replace(match[0], formatted + ' ms'); element.textContent = newText; if (element.innerText !== undefined) element.innerText = newText; } } } }); }); } window.addEventListener('load', formatNumbers); setTimeout(formatNumbers, 1000); setTimeout(formatNumbers, 3000);"
 
 i18n:
   activeIncidents: Aktive Vorfälle
@@ -79,7 +79,6 @@ i18n:
   averageResponseTime: "Durchschnittliche Antwortzeit: $TIMEms"
   averageResponseTimeTitle: Durchschnittliche Antwortzeit
   sevelDayResponseTime: 7-Tage Antwortzeit
-  responseTimeMs: "$TIMEms"
   up: Aktiv
   down: Inaktiv
   degraded: Beeinträchtigt
