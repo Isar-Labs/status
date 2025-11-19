@@ -58,6 +58,47 @@ status-website:
       href: https://isar-labs.com
     - title: Suite
       href: https://suite.isar-labs.com
+
+i18n:
+  activeIncidents: Aktive Vorfälle
+  allSystemsOperational: Alle Systeme funktionsfähig
+  incidentReport: "Vorfall #$NUMBER Bericht →"
+  activeIncidentSummary: Geöffnet am $DATE mit $POSTS Beiträgen
+  incidentTitle: "Vorfall #$NUMBER Details"
+  incidentDetails: Vorfall Details
+  incidentFixed: Behoben
+  incidentFixedSummary: Geschlossen am $DATE mit $POSTS Beiträgen
+  incidentMonitoring: Überwachung
+  incidentMonitoringSummary: Überwachung gestartet am $DATE mit $POSTS Beiträgen
+  incidentPageTitle: Vorfall Status
+  footer: Diese Seite ist [Open Source]($REPO), powered by [Upptime](https://upptime.js.org)
+  liveStatus: Live Status
+  overallUptime: "Gesamtverfügbarkeit: $UPTIME"
+  overallUptimeTitle: Gesamtverfügbarkeit
+  averageResponseTime: "Durchschnittliche Antwortzeit: $TIMEms"
+  averageResponseTimeTitle: Durchschnittliche Antwortzeit
+  sevelDayResponseTime: 7-Tage Antwortzeit
+  responseTimeMs: "$TIMEms"
+  up: Aktiv
+  down: Inaktiv
+  degraded: Beeinträchtigt
+  ms: ms
+  loading: Laden...
+  navGitHub: GitHub
+  rateLimitExceededTitle: Rate Limit überschritten
+  rateLimitExceededIntro: Du hast die Anzahl der Anfragen überschritten
+  rateLimitExceededWhatDoesThisMean: Was bedeutet das?
+  rateLimitExceededErrorHowCanFix: Wie kann ich das beheben?
+  rateLimitExceededErrorHowCanFixIntro: Wenn du ein Mensch bist, dann bedeutet das
+  errorTitle: Ein Fehler ist aufgetreten
+  errorIntro: Beim Abrufen der neuesten Status-Details ist ein Fehler aufgetreten.
+  errorText: Du kannst es in wenigen Momenten erneut versuchen.
+  errorHome: Zurück zur Startseite
+  pastIncidents: Vergangene Vorfälle
+  pastIncidentsResolved: Behoben in $MINUTES Minuten mit $POSTS Beiträgen
+  liveStatusHtmlComment: "<!--\nDiese Seite ist Open Source! Du kannst helfen, sie zu verbessern.\nhttps://github.com/isar-labs/status\n-->"
+  numFormatterThousands: "."
+  numFormatterMillions: ","
 #    - title: GitHub
 #      href: https://github.com/$OWNER/$REPO
 
