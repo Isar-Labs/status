@@ -47,8 +47,8 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.isar-labs.com
   #baseUrl: /upptime-demo
-  favicon: https://raw.githubusercontent.com/isar-labs/status/refs/heads/master/assets/icon.png
-  logoUrl: https://raw.githubusercontent.com/isar-labs/status/refs/heads/master/assets/icon.png
+  favicon: https://status.isar-labs.com/favicon.png
+  logoUrl: https://status.isar-labs.com/icon.png
   name: Status
   theme: light
   introTitle: "Das ist die Status-Seite von **Isar Labs**."
@@ -61,7 +61,7 @@ status-website:
 
 scripts:
   js: 
-    - src: https://status.isar-labs.com/assets/format-response-time.js
+    - src: https://status.isar-labs.com/format-response-time.js
       async: true
 
 i18n:
