@@ -58,8 +58,7 @@ status-website:
       href: https://isar-labs.com
     - title: Suite
       href: https://suite.isar-labs.com
-  scripts:
-    js: "window.onload = function () {  const elements = document.getElementsByClassName('data');  const format = new Intl.NumberFormat('de-DE');  for (let i = 0; i < elements.length; i++) {    const text = elements[i].textContent;    if (text.includes('ms')) {      const parts = text.split(' ');      if (parts.length === 2) {        const time = format.format(parseInt(parts[0]));        elements[i].textContent = time + ' ' + 'ms';      }    }  }}"
+  js: "function formatNumbers() { const format = new Intl.NumberFormat('de-DE'); const selectors = ['.data', 'td', 'th', 'span', '.response-time', '[class*=\"time\"]', '[class*=\"response\"]']; selectors.forEach(selector => { const elements = document.querySelectorAll(selector); elements.forEach(element => { const text = element.textContent || element.innerText; if (text && text.includes('ms') && /\\d+\\s*ms/.test(text)) { const match = text.match(/(\\d+)\\s*ms/); if (match) { const number = parseInt(match[1]); if (!isNaN(number)) { const formatted = format.format(number); element.textContent = text.replace(match[0], formatted + ' ms'); element.innerText = text.replace(match[0], formatted + ' ms'); } } } }); }); } window.addEventListener('load', formatNumbers); setTimeout(formatNumbers, 1000); setTimeout(formatNumbers, 3000);"
 
 i18n:
   activeIncidents: Aktive Vorfälle
