@@ -1,6 +1,7 @@
-window.onload = function () {
+const format = new Intl.NumberFormat("de-DE");
+
+function formatNumbers() {
   const elements = document.getElementsByClassName("data");
-  const format = new Intl.NumberFormat("de-DE");
 
   for (let i = 0; i < elements.length; i++) {
     const text = elements[i].textContent;
@@ -15,4 +16,6 @@ window.onload = function () {
       }
     }
   }
-};
+}
+
+window.addEventListener("load", formatNumbers);
