@@ -59,6 +59,11 @@ status-website:
     - title: Suite
       href: https://suite.isar-labs.com
 
+scripts:
+  js: 
+    - src: https://status.isar-labs.com/assets/format-response-time.js
+      async: true
+
 i18n:
   activeIncidents: Aktive Vorfälle
   allSystemsOperational: Alle Systeme funktionsfähig
