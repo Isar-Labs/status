@@ -1,21 +1,37 @@
 const format = new Intl.NumberFormat("de-DE");
 
-function formatNumbers() {
-  const elements = document.getElementsByClassName("data");
+function formatText(element) {
+  const text = element.textContent;
 
-  for (let i = 0; i < elements.length; i++) {
-    const text = elements[i].textContent;
+  if (text.includes("ms")) {
+    const responseTime = text.replace("ms", "").trim();
 
-    if (text.includes("ms")) {
-      const parts = text.split(" ");
+    const time = parseInt(responseTime, 10);
 
-      if (parts.length === 2) {
-        const time = format.format(parseInt(parts[0]));
-
-        elements[i].textContent = time + " " + "ms";
-      }
+    if (!isNaN(time)) {
+      element.textContent = format.format(time) + " " + "ms";
     }
   }
 }
 
-window.addEventListener("load", formatNumbers);
+function formatNumbers() {
+  const dataElements = document.getElementsByClassName("data");
+
+  for (let i = 0; i < dataElements.length; i++) {
+    formatText(dataElements[i]);
+  }
+
+  const elements = document.getElementsByTagName("dd");
+
+  for (let i = 0; i < elements.length; i++) {
+    formatText(elements[i]);
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", formatNumbers);
+} else {
+  formatNumbers();
+}
+setTimeout(formatNumbers, 500);
+setTimeout(formatNumbers, 1500);
