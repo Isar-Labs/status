@@ -31,10 +31,11 @@ sites:
     __dangerous__body_down_if_text_missing_2: '"name":"CDN/Cache","status":"operational"'
     __dangerous__body_down_if_text_missing_3: '"name":"Edge Network","status":"operational"'
     maxResponseTime: 12000
-  - name: Neon Database (third party)
-    url: https://neonstatus.com/aws-europe-frankfurt
-    __dangerous__body_down: "major outage"
-    __dangerous__body_degraded: "degraded performance"
+  - name: Neon DB (third party)
+    url: https://neonstatus.com
+    __dangerous__body_down_if_text_missing: "All Systems Operational"
+    __dangerous__body_degraded: "Partial Service Disruption"
+    __dangerous__body_down: "Service Disruption"
     expectedStatusCodes:
       - 200
     maxResponseTime: 15000
