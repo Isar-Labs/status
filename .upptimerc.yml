@@ -100,6 +100,7 @@ i18n:
   liveStatusHtmlComment: "<!--\nDiese Seite ist Open Source! Du kannst helfen, sie zu verbessern.\nhttps://github.com/isar-labs/status\n-->"
   numFormatterThousands: "."
   numFormatterMillions: ","
+  locale: de-DE
 #    - title: GitHub
 #      href: https://github.com/$OWNER/$REPO
 
