@@ -23,7 +23,7 @@ sites:
     url: https://status.trigger.dev
     __dangerous__body_down_if_text_missing: "All services are online"
     maxResponseTime: 15000
-  - name: Cloudflare CDN (third party)
+  - name: Cloudflare (third party)
     url: https://www.cloudflarestatus.com/api/v2/summary.json
     __dangerous__body_down_if_text_missing: '"indicator":"none"'
     __dangerous__body_degraded: '"indicator":"minor"'
