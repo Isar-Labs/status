@@ -28,9 +28,30 @@ function formatNumbers() {
   }
 }
 
+function replaceIncidentTexts() {
+  const elements = document.querySelectorAll("section article h4");
+
+  elements.forEach((element) => {
+    if (element.textContent.indexOf("is down") !== -1) {
+      element.textContent = element.textContent.replace(
+        "is down",
+        "ist ausgefallen"
+      );
+    } else if (element.textContent.indexOf("has degraded performance") !== -1) {
+      element.textContent = element.textContent.replace(
+        "has degraded performance",
+        "hat eine verminderte Leistung"
+      );
+    }
+  });
+}
+
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", formatNumbers);
+  document.addEventListener("DOMContentLoaded", replaceIncidentTexts);
 } else {
   formatNumbers();
+  replaceIncidentTexts();
 }
 setTimeout(formatNumbers, 500);
+setTimeout(replaceIncidentTexts, 500);
