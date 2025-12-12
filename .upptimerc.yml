@@ -25,11 +25,8 @@ sites:
     maxResponseTime: 15000
   - name: Cloudflare (third party)
     url: https://www.cloudflarestatus.com/api/v2/summary.json
-    __dangerous__body_down_if_text_missing: '"indicator":"none"'
-    __dangerous__body_degraded: '"indicator":"minor"'
-    __dangerous__body_down: '"indicator":"major"'
-    __dangerous__body_down_if_text_missing_2: '"name":"CDN/Cache","status":"operational"'
-    __dangerous__body_down_if_text_missing_3: '"name":"Edge Network","status":"operational"'
+    __dangerous__body_down: '"indicator":"critical"'
+    __dangerous__body_degraded: '"indicator":"major"'
     maxResponseTime: 12000
   - name: Neon DB (third party)
     url: https://neonstatus.com
