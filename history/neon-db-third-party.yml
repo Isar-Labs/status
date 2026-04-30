@@ -1,7 +1,7 @@
 url: https://neonstatus.com
-status: down
+status: degraded
 code: 200
-responseTime: 568
-lastUpdated: 2026-04-30T12:50:21.375Z
+responseTime: 62
+lastUpdated: 2026-04-30T13:39:07.673Z
 startTime: 2025-11-25T14:23:29.950Z
 generator: Upptime <https://github.com/upptime/upptime>
