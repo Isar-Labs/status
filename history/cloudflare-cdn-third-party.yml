@@ -1,7 +1,7 @@
 url: https://www.cloudflarestatus.com/api/v2/summary.json
-status: up
-code: 200
-responseTime: 287
-lastUpdated: 2026-06-04T23:31:35.812Z
+status: down
+code: 405
+responseTime: 18
+lastUpdated: 2026-06-05T05:39:10.157Z
 startTime: 2025-12-12T08:40:30.332Z
 generator: Upptime <https://github.com/upptime/upptime>
