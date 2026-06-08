@@ -1,7 +1,7 @@
 url: https://www.vercel-status.com/api/v2/summary.json
-status: up
+status: down
 code: 200
-responseTime: 240
-lastUpdated: 2026-06-07T23:21:55.895Z
+responseTime: 19
+lastUpdated: 2026-06-08T19:06:17.338Z
 startTime: 2025-11-17T14:35:54.319Z
 generator: Upptime <https://github.com/upptime/upptime>
