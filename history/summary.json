@@ -25,11 +25,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/construction-documentation.isar-labs.com.ico",
     "slug": "construction-documentation",
     "status": "down",
-    "uptime": "43.29%",
+    "uptime": "43.28%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "0.00%",
     "uptimeMonth": "1.38%",
-    "uptimeYear": "43.29%",
+    "uptimeYear": "43.28%",
     "time": 1055,
     "timeDay": 0,
     "timeWeek": 0,
@@ -38,7 +38,7 @@
     "dailyMinutesDown": {
       "2025-11-18": 13,
       "2025-12-01": 44,
-      "2026-07-11": 604,
+      "2026-07-11": 680,
       "2026-07-10": 1440,
       "2026-07-09": 1440,
       "2026-07-08": 1440,
@@ -386,16 +386,16 @@
     "url": "https://neonstatus.com",
     "icon": "https://icons.duckduckgo.com/ip3/neonstatus.com.ico",
     "slug": "neon-db-third-party",
-    "status": "down",
-    "uptime": "55.56%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
+    "status": "up",
+    "uptime": "55.55%",
+    "uptimeDay": "94.75%",
+    "uptimeWeek": "99.25%",
     "uptimeMonth": "33.67%",
-    "uptimeYear": "55.56%",
+    "uptimeYear": "55.55%",
     "time": 152,
-    "timeDay": 77,
-    "timeWeek": 122,
-    "timeMonth": 85,
+    "timeDay": 157,
+    "timeWeek": 144,
+    "timeMonth": 90,
     "timeYear": 152,
     "dailyMinutesDown": {
       "2025-11-25": 1,
@@ -507,7 +507,7 @@
       "2026-04-24": 1440,
       "2026-04-23": 1440,
       "2026-04-22": 330,
-      "2026-07-11": 0
+      "2026-07-11": 76
     }
   }
 ]
