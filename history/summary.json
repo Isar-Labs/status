@@ -25,11 +25,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/construction-documentation.isar-labs.com.ico",
     "slug": "construction-documentation",
     "status": "down",
-    "uptime": "39.90%",
+    "uptime": "39.88%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "0.00%",
     "uptimeMonth": "0.00%",
-    "uptimeYear": "39.90%",
+    "uptimeYear": "39.88%",
     "time": 1055,
     "timeDay": 0,
     "timeWeek": 0,
@@ -38,7 +38,7 @@
     "dailyMinutesDown": {
       "2025-11-18": 13,
       "2025-12-01": 44,
-      "2026-07-31": 779,
+      "2026-07-31": 981,
       "2026-07-30": 1440,
       "2026-07-29": 1440,
       "2026-07-28": 1440,
@@ -323,17 +323,17 @@
     "url": "https://status.trigger.dev",
     "icon": "https://icons.duckduckgo.com/ip3/status.trigger.dev.ico",
     "slug": "trigger-dev-third-party",
-    "status": "up",
+    "status": "down",
     "uptime": "98.81%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.97%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.51%",
+    "uptimeMonth": "99.97%",
     "uptimeYear": "98.81%",
-    "time": 1231,
-    "timeDay": 1494,
-    "timeWeek": 1532,
-    "timeMonth": 1522,
-    "timeYear": 1231,
+    "time": 1233,
+    "timeDay": 1644,
+    "timeWeek": 1565,
+    "timeMonth": 1530,
+    "timeYear": 1233,
     "dailyMinutesDown": {
       "2025-11-16": 300,
       "2025-11-23": 48,
@@ -365,7 +365,8 @@
       "2026-06-23": 1321,
       "2026-06-22": 235,
       "2026-06-24": 49,
-      "2026-06-30": 405
+      "2026-06-30": 405,
+      "2026-07-31": 0
     }
   },
   {
@@ -412,11 +413,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/neonstatus.com.ico",
     "slug": "neon-db-third-party",
     "status": "degraded",
-    "uptime": "59.12%",
-    "uptimeDay": "93.21%",
-    "uptimeWeek": "99.03%",
+    "uptime": "59.09%",
+    "uptimeDay": "79.12%",
+    "uptimeWeek": "97.02%",
     "uptimeMonth": "96.13%",
-    "uptimeYear": "59.12%",
+    "uptimeYear": "59.09%",
     "time": 154,
     "timeDay": 63,
     "timeWeek": 176,
@@ -533,7 +534,7 @@
       "2026-04-23": 1440,
       "2026-04-22": 330,
       "2026-07-11": 76,
-      "2026-07-31": 98
+      "2026-07-31": 301
     }
   }
 ]
